@@ -1,6 +1,7 @@
 # Basic Vue 3, Vite and tailwind develop environment
 * Vue 3 & latest vite version
 * latest Tailwind and JIT mode
+* full ESlint rules
 * with auto Production deploy by doing following step : 
     * add `base` property in vite.config.js
     ```javascript=
