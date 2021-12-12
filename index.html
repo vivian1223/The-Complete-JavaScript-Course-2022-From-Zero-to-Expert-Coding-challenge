@@ -1,13 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" href="/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+</body>
+<script>
+    // export fuction 
+    const calcBmi = (mass, height) => {
+        return mass / height ** 2
+    };
+    // componet main task, compare 
+    const bmiCompare = (params) => {
+        const { mark, john} = params;
+        const markBmi = calcBmi(mark.mass, mark.height);
+        const johnBmi = calcBmi(john.mass, john.height);
+        if (markBmi > johnBmi) {
+            console.log("Mark's BMI is higher than John's");
+        } else {
+            console.log("Mark's BMI is lower than John's");
+        }
+    };
+    // The param format for the bmiCompare can be
+    // {
+    //     mark: {
+    //         mass: 78;
+    //         height: 1.69
+    //     };
+    //     john: {
+    //         mass: 92;
+    //         height: 1.95
+    //     } 
+    // }
+    bmiCompare({
+        mark: {
+            mass: 78,
+            height: 1.69
+        },
+        john: {
+            mass: 92,
+            height: 1.95
+        } 
+    });
+    bmiCompare({
+        mark: {
+            mass: 95,
+            height: 1.88
+        },
+        john: {
+            mass: 85,
+            height: 1.76
+        } 
+    });
+
+</script>
 </html>
