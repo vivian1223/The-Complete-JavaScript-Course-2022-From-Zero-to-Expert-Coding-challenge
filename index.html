@@ -9,28 +9,11 @@
 <body>
 </body>
 <script>
-    // calc average
-    const calcAverage = ([score1, score2, score3]) => {
-        return (score1 + score2 + score3)/3
-    };
-    // tell whether one of the score is at least 100  
-    const scoreFilter = ([score1, score2, score3]) => {
-        return score1 >= 100 || score2 >= 100 || score3 >= 100
+    const showTipMessage = (price) => {
+        console.log(price>=50 && price<=300 ? `The bill was ${price} and tip is ${price *0.15} `: `The bill was ${price} and tip is ${price * 0.2}` )
     }
-    const showWinner = (Dolphins, Koalas) => {
-        if(calcAverage(Dolphins) > calcAverage(Koalas) && scoreFilter(Dolphins)) {
-            console.log('Dolphins wins!')
-        } else if(calcAverage(Dolphins) < calcAverage(Koalas) && scoreFilter(Koalas)) {
-            console.log('Koalas wins!')
-        }else if(calcAverage(Dolphins) === calcAverage(Koalas) && scoreFilter(Dolphins) && scoreFilter(Koalas)) {
-            console.log('draw!')
-        }else {
-            console.log("ineffective game!");
-        }
-    }
-    showWinner([96,108,89], [88, 91, 110]);
-    showWinner([97,112,101], [109, 95, 123]);
-    showWinner([97,112,101], [109, 95, 106]);
-
+    showTipMessage(275);
+    showTipMessage(40);
+    showTipMessage(430);
 </script>
 </html>
