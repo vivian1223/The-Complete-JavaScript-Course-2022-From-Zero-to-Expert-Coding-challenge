@@ -9,19 +9,13 @@
 <body>
 </body>
 <script>
-    const calcAverage = ([score1=0, score2=0, score3=0]) => {
-        return (score1+score2+score3)/3;
+    const calcTip = (value) => {
+        return value>=50 && value<=300 ? value * 0.15 : value * 0.2
     }
-    const showWinner = (dolphins=[], koalas=[]) => {
-        if(calcAverage(dolphins) * 2 >= calcAverage(koalas)) {
-            console.log('Dolphins wins the trophy!');
-        }else if (calcAverage(koalas) * 2 >= calcAverage(dolphins)) {
-            console.log('Koalas wins the trophy!');
-        }else {
-            console.log('No one wins the trophy!')
-        }
-    };
-    showWinner([44, 23, 71],[65, 54, 49]);
-    showWinner([85, 54, 41],[23, 34, 27]);
+    const list = [125, 555, 4];
+    const total = list.map((item) => {
+        return item = item + calcTip(item);
+    });
+    console.log(total);
 </script>
 </html>
