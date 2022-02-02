@@ -9,11 +9,19 @@
 <body>
 </body>
 <script>
-    const showTipMessage = (price) => {
-        console.log(price>=50 && price<=300 ? `The bill was ${price} and tip is ${price *0.15} `: `The bill was ${price} and tip is ${price * 0.2}` )
+    const calcAverage = ([score1=0, score2=0, score3=0]) => {
+        return (score1+score2+score3)/3;
     }
-    showTipMessage(275);
-    showTipMessage(40);
-    showTipMessage(430);
+    const showWinner = (dolphins=[], koalas=[]) => {
+        if(calcAverage(dolphins) * 2 >= calcAverage(koalas)) {
+            console.log('Dolphins wins the trophy!');
+        }else if (calcAverage(koalas) * 2 >= calcAverage(dolphins)) {
+            console.log('Koalas wins the trophy!');
+        }else {
+            console.log('No one wins the trophy!')
+        }
+    };
+    showWinner([44, 23, 71],[65, 54, 49]);
+    showWinner([85, 54, 41],[23, 34, 27]);
 </script>
 </html>
