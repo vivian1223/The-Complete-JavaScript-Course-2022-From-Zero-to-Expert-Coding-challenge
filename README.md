@@ -71,3 +71,12 @@ Your tasks:
 3. Createanarray'tips'containingthetipvalueforeachbill,calculatedfrom the function you created before
 4. Bonus:Createanarray'total'containingthetotalvalues,sothebill+tip Test data: 125, 555 and 44
 Hint: Remember that an array needs a value in each position, and that value can actually be the returned value of a function! So you can just call a function as array values (so don't store the tip values in separate variables first, but right in the new array) 😉
+
+## Section 3: JavaScript fundamentals part 2
+* branch : feat/section3CodingChallenging#3
+Let's go back to Mark and John comparing their BMIs! This time, let's use objects to implement the calculations! Remember: BMI = mass / height ** 2 = mass / (height * height) (mass in kg and height in meter)
+Your tasks:
+1. For each of them, create an object with properties for their full name,mass,and height (Mark Miller and John Smith)
+2. Create a 'calcBMI' method on each object to calculate the BMI(thesame method on both objects). Store the BMI value to a property, and also return it from the method
+3. Log to th econsole who has the higher BMI, together with the full name and the respective BMI. Example: "John's BMI (28.3) is higher than Mark's (23.9)!"
+Test data: Marks weights 78 kg and is 1.69 m tall. John weights 92 kg and is 1.95 m tall.
