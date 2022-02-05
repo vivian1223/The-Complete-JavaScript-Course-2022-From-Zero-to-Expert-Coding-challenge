@@ -9,13 +9,27 @@
 <body>
 </body>
 <script>
-    const calcTip = (value) => {
-        return value>=50 && value<=300 ? value * 0.15 : value * 0.2
+    const Mark  = {
+        weight: 78,
+        heitght: 1.69,
+        calcBMI: function() {
+            return this.weight/ this.heitght ** 2
+        }
+    };
+    const John = {
+        weight: 92,
+        heitght: 1.95,
+        calcBMI: function()  {
+            return this.weight/ this.heitght ** 2
+        }
     }
-    const list = [125, 555, 4];
-    const total = list.map((item) => {
-        return item = item + calcTip(item);
-    });
-    console.log(total);
+    if(Mark.calcBMI()> John.calcBMI()) {
+        console.log("Mark's BMI is higher than John's." )
+    } else if(Mark.calcBMI()< John.calcBMI()) {
+        console.log("Mark's BMI is higher than John's." )
+    }else{
+        console.log('Their BMI is the same!')
+    }
+
 </script>
 </html>
