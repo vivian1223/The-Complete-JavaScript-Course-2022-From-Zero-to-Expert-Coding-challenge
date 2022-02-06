@@ -80,3 +80,15 @@ Your tasks:
 2. Create a 'calcBMI' method on each object to calculate the BMI(thesame method on both objects). Store the BMI value to a property, and also return it from the method
 3. Log to th econsole who has the higher BMI, together with the full name and the respective BMI. Example: "John's BMI (28.3) is higher than Mark's (23.9)!"
 Test data: Marks weights 78 kg and is 1.69 m tall. John weights 92 kg and is 1.95 m tall.
+
+## Section 5: Developer Skills & Editor Setup
+
+* branch : feat/section5CodingChallenging#1
+
+Given an array of forecasted maximum temperatures, the thermometer displays a string with the given temperatures. Example: [17, 21, 23] will print "... 17oC in 1 days ... 21oC in 2 days ... 23oC in 3 days ..."
+Your tasks:
+1. Create a function 'printForecast' which takes in an array 'arr' and logs a string like the above to the console. Try it with both test datasets.
+2. Use the problem-solving framework: Understand the problem and breakitup into sub-problems!
+Test data:
+§ Data 1: [17, 21, 23]
+§ Data2:[12,5,-5,0,4]
