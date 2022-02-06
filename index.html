@@ -1,35 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
 </body>
 <script>
-    const Mark  = {
-        weight: 78,
-        heitght: 1.69,
-        calcBMI: function() {
-            return this.weight/ this.heitght ** 2
-        }
-    };
-    const John = {
-        weight: 92,
-        heitght: 1.95,
-        calcBMI: function()  {
-            return this.weight/ this.heitght ** 2
-        }
+    const printTemp = (ary) => {
+        let str = "";
+        ary.forEach((ele, index) => {
+            str += `${ele}oC  in ${index + 1} days `;
+        });
+        return str.trim();
     }
-    if(Mark.calcBMI()> John.calcBMI()) {
-        console.log("Mark's BMI is higher than John's." )
-    } else if(Mark.calcBMI()< John.calcBMI()) {
-        console.log("Mark's BMI is higher than John's." )
-    }else{
-        console.log('Their BMI is the same!')
-    }
-
+    printTemp([17, 21, 23]);
+    printTemp([12, 5, -5, 0, 4]);
 </script>
+
 </html>
